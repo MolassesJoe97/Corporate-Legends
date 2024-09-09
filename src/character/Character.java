@@ -19,5 +19,5 @@ public class Character {
     // Hit box
     public Rectangle hitbox;
     public int hitboxDefaultX, hitboxDefaultY;
-    public boolean canCollide = false;
+    public boolean collision = false;
 }
