@@ -37,8 +37,8 @@ public class Player extends Character {
     }
 
     public void setDefaultValues () {
-        worldX = 0;
-        worldY = 0;
+        worldX = 2 * gamePanel.tileSize;
+        worldY = 2 * gamePanel.tileSize;
         speed = 4;
     }
 
@@ -74,6 +74,7 @@ public class Player extends Character {
             }
 
             collision = false;
+            gamePanel.collisionChecker.checkTile(this);
 
             if (!collision) {
                 switch (direction) {

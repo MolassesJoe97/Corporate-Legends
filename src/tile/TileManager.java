@@ -35,12 +35,15 @@ public class TileManager {
 
             tiles[2] = new Tile();
             tiles[2].image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/tiles/water.png")));
+            tiles[2].canCollide = true;
 
             tiles[3] = new Tile();
             tiles[3].image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/tiles/wall.png")));
+            tiles[3].canCollide = true;
 
             tiles[4] = new Tile();
             tiles[4].image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/tiles/tree.png")));
+            tiles[4].canCollide = true;
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
